@@ -1,0 +1,267 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/archivo_black"
+        android:shadowColor="#885959"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1"
+        android:text="Usa la calculadora."
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etProceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitulo"
+        android:cursorVisible="true"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="right"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textSize="28dp" />
+
+    <Button
+        android:id="@+id/btnSiete"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/etProceso"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:text="7"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp"
+         />
+
+    <Button
+        android:id="@+id/btnOcho"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/etProceso"
+        android:layout_toEndOf="@+id/btnSiete"
+        android:layout_toRightOf="@+id/btnSiete"
+        android:text="8"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnNueve"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/etProceso"
+        android:layout_toEndOf="@+id/btnOcho"
+        android:layout_toRightOf="@+id/btnOcho"
+        android:text="9"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/etProceso"
+        android:layout_toEndOf="@+id/btnNueve"
+        android:layout_toRightOf="@+id/btnNueve"
+        android:text="/"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnCuatro"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnSiete"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:text="4"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnCinco"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnOcho"
+        android:layout_toEndOf="@+id/btnCuatro"
+        android:layout_toRightOf="@+id/btnCuatro"
+        android:text="5"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSeis"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnNueve"
+        android:layout_toEndOf="@+id/btnCinco"
+        android:layout_toRightOf="@+id/btnCinco"
+        android:text="6"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnMulti"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnDiv"
+        android:layout_toEndOf="@+id/btnSeis"
+        android:layout_toRightOf="@+id/btnSeis"
+        android:text="x"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnUno"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnCuatro"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:text="1"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDos"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnCinco"
+        android:layout_toEndOf="@+id/btnUno"
+        android:layout_toRightOf="@+id/btnUno"
+        android:text="2"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnTres"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnSeis"
+        android:layout_toEndOf="@+id/btnDos"
+        android:layout_toRightOf="@+id/btnDos"
+        android:text="3"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnResta"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnMulti"
+        android:layout_toEndOf="@+id/btnTres"
+        android:layout_toRightOf="@+id/btnTres"
+        android:text="-"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnPunto"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnUno"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:text="."
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnCero"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnDos"
+        android:layout_toEndOf="@+id/btnPunto"
+        android:layout_toRightOf="@+id/btnPunto"
+        android:text="0"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnIgual"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnTres"
+        android:layout_toEndOf="@+id/btnCero"
+        android:layout_toRightOf="@+id/btnCero"
+        android:text="="
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnSuma"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/btnResta"
+        android:layout_toEndOf="@+id/btnIgual"
+        android:layout_toRightOf="@+id/btnIgual"
+        android:text="+"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="77dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/btnPunto"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="258dp"
+        android:layout_marginLeft="258dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#986E6E"
+        android:backgroundTintMode="src_in"
+        android:fontFamily="@font/archivo_black"
+        android:text="C"
+        android:textSize="20sp" />
+
+</RelativeLayout>
